@@ -180,6 +180,7 @@ main .pg1 .text2 p {
 }main .pg1 .text2 p img {
     padding-right: 10px;
 }
+main .pg1 {}
 /*섹션2입니다*/
 main .pg2 {
     background-color: #08103a;
@@ -408,6 +409,9 @@ footer p {
   font-weight: 400;
   padding-bottom: 150px;
 }
+footer .sns li {
+  transition: all 0.5s;
+}
 footer div a h1:hover {
   background: linear-gradient(180deg, rgba(255, 104, 0, 0.8) 0%, #FFA800 100%);
   -webkit-background-clip: text;
@@ -415,6 +419,9 @@ footer div a h1:hover {
   background-clip: text;
   opacity: 1;
   transition: 1s;
+}
+footer .sns li:hover {
+  transform: translate(0,0) scale(1.2);
 }
 /*slide*/
 .pg3 .slick-prev {
@@ -875,4 +882,23 @@ footer div a h1:hover {
 }
 .pg5 .pg5slide .wb3:hover::before {
   opacity: 1;
+}
+/**/
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+}
+.popup .popmv1 {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
 }
